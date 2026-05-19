@@ -3,9 +3,7 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6';
 import { FiCheckCircle, FiGlobe, FiZap, FiSearch, FiMic } from 'react-icons/fi';
 import Image from "next/image";
-import saller1 from "../../../public/images/saller1.jpg"
 import helmet from "../../../public/images/helmet.png"
-import abstract from "../../../public/images/abstract.jpg"
 
 const Hero = () => {
   return (

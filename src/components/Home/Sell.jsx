@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import demoWeb from "../../../public/images/web-demo.png"
+import demoWeb from "../../../public/images/Web-demo.png"
 import {
   FiArrowUpRight,
   FiShoppingBag,
