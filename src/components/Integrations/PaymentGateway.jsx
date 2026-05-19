@@ -8,6 +8,8 @@ import {
   FiSmartphone,
   FiGlobe,
 } from "react-icons/fi";
+import { MdOutlinePayment } from "react-icons/md";
+
 
 const PaymentGateway = () => {
   const gateways = [
@@ -36,11 +38,9 @@ const PaymentGateway = () => {
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="max-w-3xl mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <p className="text-[14px] font-medium  text-blue-600">
-              Payment Solutions
-            </p>
-          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+             <MdOutlinePayment/> Payment Solutions
+            </div>
 
           <h2 className="text-5xl font-normal text-slate-900 leading-[1.2] mb-6">
             One checkout system <br />

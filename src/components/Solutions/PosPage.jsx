@@ -4,6 +4,7 @@ import {
   FiBarChart2, FiUsers, FiCheckCircle, FiArrowRight, 
   FiPrinter, FiLayers, FiCreditCard, FiActivity, FiSearch, FiPlay, FiTag, FiGift, FiBox, FiTrendingUp, FiPercent
 } from 'react-icons/fi';
+import { MdArchitecture } from "react-icons/md";
 
 
 const campaigns = [
@@ -155,6 +156,10 @@ const POSDeepDive = () => {
 <section className="py-24 max-w-screen-xl mx-auto">
   {/* Section Header */}
   <div className="mb-16 text-center">
+  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+              <MdArchitecture />
+              Growth Architecture
+            </div>
     <h2 className="text-4xl md:text-5xl font-medium text-slate-900 tracking-tight mb-4">
       The Infrastructure for 
       <span className="text-gray-400"> Hyper-Growth Retail.</span>
@@ -216,8 +221,10 @@ const POSDeepDive = () => {
         {/* Header Block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-medium mb-4">
-              <FiTrendingUp /> Revenue Optimization
+
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+              <FiTrendingUp />
+              Revenue Optimization
             </div>
             <h2 className="text-4xl md:text-5xl font-normal text-slate-900 tracking-tight leading-tight">
               A Promotion Engine built to <br />

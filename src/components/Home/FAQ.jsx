@@ -50,10 +50,6 @@ const FAQ = () => {
 
           {/* Left Content */}
           <div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold uppercase tracking-[0.2em] mb-6">
-              <MdContactSupport className="fill-current" />Support
-            </div>
-
             <h1 className="text-5xl lg:text-6xl leading-tight ">
               Need Help? <br /> Start Here.
             </h1>

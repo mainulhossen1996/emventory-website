@@ -7,6 +7,7 @@ import {
   FiClock,
   FiLink,
 } from "react-icons/fi";
+import { TbTruckDelivery } from "react-icons/tb";
 
 const DeliveryIntegration = () => {
   return (
@@ -15,9 +16,9 @@ const DeliveryIntegration = () => {
         {/* Header Block - Centered & Clean */}
         <div className="flex flex-col items-center mb-12 gap-6">
           <div className="max-w-screen-lg text-center">
-            <p className="text-[14px] font-medium text-blue-600 mb-3">
-              Product Delivery
-            </p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+             <TbTruckDelivery/> Product Delivery
+            </div>
 
             <h3 className="text-5xl font-normal text-slate-900 tracking-tighter leading-tight">
               Automated Logistics. Zero manual entry.
@@ -37,29 +38,29 @@ const DeliveryIntegration = () => {
 
           <div className="grid md:grid-cols-4 gap-8 relative z-10">
             {/* Step 1: New Order */}
-            <div className="group bg-white p-8 rounded-[32px] border border-slate-200 transition-all hover:-translate-y-2">
+            <div className="group bg-white p-6 rounded-[24px] border border-slate-200 transition-all hover:-translate-y-2">
               <div className="h-14 w-14 bg-slate-50 text-slate-400 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 <FiPackage size={24} />
               </div>
               <h4 className="font-bold text-slate-900 mb-2">Sync Order</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Emventory grabs the order data from your sales channel.
               </p>
             </div>
 
             {/* Step 2: One-Click Booking */}
-            <div className="group bg-white p-8 rounded-[32px] border border-slate-200 transition-all hover:-translate-y-2">
+            <div className="group bg-white p-6 rounded-[24px] border border-slate-200 transition-all hover:-translate-y-2">
               <div className="h-14 w-14 bg-slate-50 text-slate-400 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 <FiClock size={24} />
               </div>
               <h4 className="font-bold text-slate-900 mb-2">Book Courier</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <p className="text-sm text-slate-500 leading-relaxed">
                 One click sends address & phone details to the courier.
               </p>
             </div>
 
             {/* Step 3: Logistics Hub (THE LOGO CARD) */}
-            <div className="group bg-[#020617] p-8 rounded-[32px] shadow-2xl scale-105 border border-white/10 relative overflow-hidden">
+            <div className="group bg-[#020617] p-6 rounded-[24px] shadow-2xl scale-105 border border-white/10 relative overflow-hidden">
               {/* Logo Container */}
               <div className="flex flex-col gap-4 relative z-10">
                 <div className="h-14 w-full bg-white rounded-2xl flex items-center justify-center p-3">
@@ -85,12 +86,12 @@ const DeliveryIntegration = () => {
             </div>
 
             {/* Step 4: Final Tracking */}
-            <div className="group bg-white p-8 rounded-[32px] border border-slate-200 transition-all hover:-translate-y-2">
+            <div className="group bg-white p-6 rounded-[24px] border border-slate-200 transition-all hover:-translate-y-2">
               <div className="h-14 w-14 bg-slate-50 text-slate-400 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-all">
                 <FiNavigation size={24} />
               </div>
               <h4 className="font-bold text-slate-900 mb-2">Track & Notify</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Status updates are pushed back to your dashboard live.
               </p>
             </div>

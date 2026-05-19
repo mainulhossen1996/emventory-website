@@ -37,7 +37,7 @@ const ProcessVisualizer = () => {
     <section className="py-24 overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
       <div className='text-center mb-10'>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold uppercase tracking-[0.2em] mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
               <MdOutlineRocketLaunch className="fill-current" />
               Publish Store
             </div>

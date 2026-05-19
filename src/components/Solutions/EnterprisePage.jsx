@@ -6,6 +6,7 @@ import {
   FiTrendingUp, FiActivity, FiServer, FiArrowRight, FiInfinity, FiBarChart2, FiFilter, FiDownload, FiCheckCircle, FiChevronRight
 } from 'react-icons/fi';
 import { PiShieldCheckBold } from "react-icons/pi";
+import { MdHub } from "react-icons/md";
 
 
 const EnterprisePage = () => {
@@ -176,7 +177,7 @@ const EnterprisePage = () => {
         </div>
       </section>
 
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-24 bg-white relative overflow-hidden">
       {/* Decorative background "Grid" - very subtle */}
       <div className="absolute inset-0 opacity-[0.4] pointer-events-none" 
            style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.svg.org/2000/svg'%3E%3Cpath d='M40 0H0v40h40V0zM1 39V1h38v38H1z' fill='%23f1f5f9' fill-opacity='1'/%3E%3C/svg%3E")` }}>
@@ -184,7 +185,8 @@ const EnterprisePage = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="max-w-5xl mb-12">
-          <p className="text-sm font-medium text-blue-600 mb-4">Integrated Ecosystem</p>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+        <MdHub/>Integrated Ecosystem</div>
           <h2 className="text-4xl md:text-5xl font-normal text-slate-900 leading-[1.2] mb-6">
             Everything included.
             <span className="text-slate-400"> No add-ons, no upsells.</span>
@@ -314,7 +316,7 @@ const EnterprisePage = () => {
           {/* Left Column — Strategic Content */}
           <div className="lg:col-span-5 lg:sticky lg:top-24 space-y-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
                 <FiBarChart2 className="animate-pulse" /> Precision Intelligence
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white leading-[1.0]  mb-8">

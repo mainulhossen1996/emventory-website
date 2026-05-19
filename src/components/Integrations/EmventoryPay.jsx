@@ -26,7 +26,7 @@ const EmventoryPay = () => {
             
             {/* Left Content */}
             <div className="max-w-xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-[0.2em] mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
                 <FiUnlock /> Ready-to-use Gateway
               </div>
               

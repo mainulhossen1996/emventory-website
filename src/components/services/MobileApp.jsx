@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from "next/image";
 import AppScreen from "../../../public/images/Dashboard-Mockup.png"
-import { FaChartLine, FaBoxesStacked, FaFileInvoiceDollar, FaMobileScreen } from "react-icons/fa6";
+import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
 
 const features = [
     {
@@ -37,6 +37,10 @@ export const MobileApp = () => {
         <div className='max-w-screen-xl mx-auto py-30'>
             <div className='flex justify-between items-center gap-10 border-b border-slate-200'>
                 <div className='w-1/2'>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+              <HiMiniDevicePhoneMobile />
+              Mobile App
+            </div>
                 <p className='text-5xl font-normal leading-20'>
                     Take control your business form anywhere, anytime.
                 </p>

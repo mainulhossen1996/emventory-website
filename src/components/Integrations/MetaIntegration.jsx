@@ -11,6 +11,7 @@ import {
   FiLayers,
   FiTrendingUp,
 } from "react-icons/fi";
+import { FaMeta } from "react-icons/fa6";
 
 const MetaIntegration = () => {
   return (
@@ -181,12 +182,12 @@ const MetaIntegration = () => {
           {/* RIGHT CONTENT */}
           <div>
 
-            <div className="flex items-center gap-3 mb-2">
+            
              
-              <p className="text-[14px] font-medium  text-blue-600">
-                Meta Business Suite
-              </p>
-            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+               <FaMeta/> Meta Business Suite
+              </div>
+           
 
             <h2 className="text-5xl font-normal text-slate-900 leading-[1.2] mb-6">
               Run your entire <br />

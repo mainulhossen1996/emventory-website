@@ -111,7 +111,7 @@ const EcommerceLanding = () => {
             <div className="relative bg-white rounded-[24px] h-[350px] overflow-hidden flex flex-col">
                {/* Nav Mock */}
                <div className="p-6 flex justify-between items-center">
-                  <div className="h-6 w-24 bg-slate-900 rounded-md"></div>
+                  <div className="h-6 w-24 bg-slate-200 rounded-md"></div>
                   <div className="flex gap-4"><div className="h-2 w-8 bg-slate-200 rounded"></div><div className="h-2 w-8 bg-slate-200 rounded"></div></div>
                </div>
                
@@ -124,15 +124,15 @@ const EcommerceLanding = () => {
                         <FiMousePointer size={12} />
                     </div>
                   </div>
-                  <div className="h-10 w-32 bg-blue-600 rounded-xl mt-4"></div>
+                  <div className="h-10 w-32 bg-blue-700 rounded-xl mt-4"></div>
                </div>
 
                {/* Bottom Layer Blur */}
-               <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+               <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-slate-100 to-transparent"></div>
             </div>
 
             {/* Floating Floating Customizer Panel (Left) */}
-            <div className="absolute -left-12 top-1/4 bg-[#1e293b] border border-white/10 rounded-2xl shadow-2xl p-4 w-44 backdrop-blur-xl animate-float-slow">
+            <div className="absolute -left-12 top-1/3 bg-[#1e293b] border border-white/10 rounded-2xl shadow-2xl p-4 w-44 backdrop-blur-xl animate-float-slow">
                <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-4">Typography</p>
                <div className="space-y-3">
                   <div className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-blue-500/50">
@@ -179,12 +179,14 @@ const EcommerceLanding = () => {
     
     {/* Heading */}
     <div className="text-center max-w-3xl mx-auto mb-10">
-      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
-        <div className="h-2 w-2 rounded-full bg-blue-600 animate-pulse"></div>
-        <span className="text-[10px] font-black uppercase tracking-[0.25em] text-blue-600">
+
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-[0.1em] mb-4">
+      <div className="h-2 w-2 rounded-full bg-blue-600 animate-pulse"></div>
+        <span className="">
           Setup Process
         </span>
-      </div>
+          
+            </div>
 
       <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-slate-900 leading-[1.05] mb-6">
         Launch your store in <br />
