@@ -9,15 +9,21 @@ import EmventoryPay from '@/components/Integrations/EmventoryPay'
 import BusinessTypes from '@/components/services/BusinessType'
 import IntegrationMatrix from '@/components/Home/IntegrationMatrix'
 import EmventoryMetricsSection from '@/components/Home/EmventoryMetricsSection'
+import MarketingChannels from '@/components/Home/MarketingChannels'
+import OmnichannelBenefits from '@/components/Home/OmnichannelBenefits'
+import UnifiedCommerceHero from '@/components/Home/UnifiedCommerce'
 
 const page = () => {
   return (
     <>
     <div >
-       <Hero /> 
+       <Hero />
+       <UnifiedCommerceHero/>
        <Sell/>
        <Ecommerce/>
        <IntegrationMatrix />
+       <MarketingChannels/>
+       <OmnichannelBenefits/>
        <AiCommerce/>
        <EmventoryPay/>
        <BusinessTypes/>

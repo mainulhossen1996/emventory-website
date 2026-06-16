@@ -57,9 +57,9 @@ const ProcessVisualizer = () => {
             Publish Store
           </div>
 
-          <h2 className="text-3xl lg:text-5xl  font-medium text-slate-900 tracking-tighter leading-[1.3] mb-6">
+          <h2 className="text-3xl lg:text-5xl  font-medium text-slate-900 tracking-tight leading-[1.3] mb-6">
             Choose a theme, customize your store &<br />
-            <span className="text-6xl font-bold">
+            <span className="text-5xl font-bold">
               launch on your own domain
             </span>
           </h2>

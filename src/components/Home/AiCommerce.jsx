@@ -13,7 +13,7 @@ import AiSearchPreview from "./AiSearch";
 
 const AiCommerce = () => {
   return (
-    <section className="relative overflow-hidden  pb-24">
+    <section className="relative overflow-hidden py-24">
       
       <div className="relative max-w-7xl mx-auto rounded-b-[50px] bg-gradient-to-b from-white to-blue-50 p-10">
       
