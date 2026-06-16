@@ -145,13 +145,13 @@ export default function AISearchSection() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-full mx-auto flex justify-center">
 
       {/* Floating Badge */}
 
 
       {/* Main Card */}
-      <div className="bg-white border border-slate-100 rounded-[32px] p-6 shadow-xl shadow-slate-100/60">
+      <div className="bg-white border border-slate-100 rounded-[32px] p-4 shadow-xl shadow-slate-100/60">
       <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-4 ">
         <span className="relative flex h-2.5 w-2.5">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
@@ -227,12 +227,12 @@ export default function AISearchSection() {
             {/* Info */}
             <div className="flex-1 min-w-0">
 
-              <h4 className="text-sm font-bold text-slate-900 leading-tight">{p.name}</h4>
-              <p className="text-xs text-slate-400 mt-0.5 mb-2">{p.sub}</p>
+              <h4 className="text-sm font-medium text-slate-900 leading-tight">{p.name}</h4>
+              <p className="text-xs font-normal text-slate-400 mt-0.5 mb-2">{p.sub}</p>
               <div className="flex items-center gap-2">
-                <span className="text-base font-bold text-slate-900">{p.price}</span>
+                <span className="text-base font-medium text-slate-900">{p.price}</span>
                 <span
-                  className="text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide"
+                  className="text-[10px] font-medium px-2.5 py-0.5 rounded-full uppercase tracking-wide"
                   style={{ background: p.matchBg, color: p.matchColor }}
                 >
                   {p.match}
@@ -248,11 +248,11 @@ export default function AISearchSection() {
         ))}
 
         {/* Stats Row */}
-        <div className="grid grid-cols-3 pt-4 mt-2 border-t border-slate-100">
+        <div className="grid grid-cols-3 pt-2 mt-2 border-t border-slate-100">
           {[["0.2s", "Search Response"], ["92%", "Match Accuracy"], ["24/7", "AI Assistance"]].map(([v, l], i) => (
             <div key={l} className={`text-center ${i > 0 ? "border-l border-slate-100" : ""}`}>
-              <p className="text-xl font-bold text-slate-900">{v}</p>
-              <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mt-0.5">{l}</p>
+              <p className="text-lg font-semibold text-slate-900">{v}</p>
+              <p className="text-[10px] font-medium text-slate-400 uppercase tracking-wider mt-0.5">{l}</p>
             </div>
           ))}
         </div>

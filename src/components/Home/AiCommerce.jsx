@@ -13,14 +13,11 @@ import AiSearchPreview from "./AiSearch";
 
 const AiCommerce = () => {
   return (
-    <section className="relative overflow-hidden bg-[#f8fbff] py-24 lg:py-32">
+    <section className="relative overflow-hidden  pb-24">
       
-      {/* Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-blue-200/40 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-indigo-200/40 blur-[100px] rounded-full pointer-events-none" />
-
-      <div className="relative max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto rounded-b-[50px] bg-gradient-to-b from-white to-blue-50 p-10">
+      
+       <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT CONTENT */}
           <div>
@@ -29,7 +26,7 @@ const AiCommerce = () => {
               AI Commerce
             </div>
 
-            <h2 className="text-3xl lg:text-5xl font-normal text-slate-900 leading-[1.2] mb-6">
+            <h2 className="text-3xl lg:text-5xl font-medium text-slate-900 leading-[1.2] mb-6">
               Search products
               <br />
               the way humans
@@ -74,7 +71,7 @@ const AiCommerce = () => {
 
             {/* CTA */}
             <div className="flex items-center gap-4">
-            <button className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-normal transition-all flex items-center gap-2 shadow-lg shadow-blue-600/20 cursor-pointer">
+            <button className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-medium transition-all flex items-center gap-2 shadow-lg shadow-blue-200 cursor-pointer text-sm">
                 Try AI Search
                 <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </button>

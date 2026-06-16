@@ -31,7 +31,7 @@ const BusinessIndustries = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto px-6">
         
         {/* Simple & Clean Header */}
         <div className="mb-8">
@@ -39,7 +39,7 @@ const BusinessIndustries = () => {
               <FiBox />
               Retail Categories
             </div>
-          <h3 className="text-4xl md:text-5xl font-norlam leading-14 text-slate-900 tracking-tight max-w-2xl">
+          <h3 className="text-4xl md:text-5xl font-medium leading-14 text-slate-900 tracking-tight max-w-2xl">
             Designed for retail, <span className="text-slate-400">perfected for your niche.</span>
           </h3>
         </div>

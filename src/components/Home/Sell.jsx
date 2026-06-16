@@ -36,73 +36,107 @@ const solutions = [
 const Sell = () => {
   return (
     <div 
-    className=" bg-[#000000] pt-24"
+    className="bg-[#000000] pt-10 lg:pt-24"
     >
-        <div className='max-w-screen-xl mx-auto flex flex-col gap-4'>
+       <div className="max-w-screen-xl mx-auto text-center flex flex-col items-center gap-6 px-4">
 
-            <p className='text-6xl font-light text-gray-500 leading-[75px] tracking-tight'>
-            <span className='text-white text-6xl'>One platform. Every way you sell.</span>
-            <br/>
-            Sell anywhere, online, offline, locally, or globally with desktop or mobile.
-            </p>
+{/* Heading */}
+<div className="space-y-4">
+  <h1 className="text-3xl md:text-6xl font-light tracking-tight leading-[1.2] text-gray-500">
+    <span className="text-white">
+      One platform for every sale
+    </span>
+    <br />
+    <span className="hover:text-blue-400">online, offline & across every branch</span>
+  </h1>
+</div>
 
-            <section className="relative overflow-hidden pt-10 pb-16 bg-[#020617]">
+{/* Flow Line / Connected Cards */}
+<div className="relative w-full mt-16 hidden lg:flex justify-center">
 
+  {/* Connector */}
+  <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[100%] h-[140px] border-t-[10px] border-gray-800 rounded-full opacity-60" />
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
-          {solutions.map((item, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-white/20 hover:bg-white/[0.05]"
-            >
-              {/* Glow Layer */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${item.glow} opacity-0 transition duration-500 group-hover:opacity-100`}
-              />
+  <div className="grid grid-cols-3 gap-10 w-full relative z-10">
 
-              {/* Top */}
-              <div className="relative z-10 flex items-start justify-between">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white backdrop-blur-md">
-                  {item.icon}
-                </div>
+    {/* Card 1 */}
+    <div className="pt-32 relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 flex gap-4">
+        {["🛒", "💳", "📦"].map((icon, i) => (
+          <div
+            key={i}
+            className="w-16 h-16 rounded-2xl bg-[#111111] border border-white/10 shadow-2xl flex items-center justify-center text-2xl"
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
 
-                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition group-hover:rotate-45">
-                  <FiArrowUpRight size={18} />
-                </div>
-              </div>
+      <div className="border-l border-gray-800 pl-6 text-left">
+        <h3 className="text-2xl font-normal text-white">
+          Retail & POS
+        </h3>
 
-              {/* Content */}
-              <div className="relative z-10 mt-10">
-                <h3 className="text-2xl font-normal text-white">
-                  {item.title}
-                </h3>
+        <p className="text-gray-500 text-lg mt-3 leading-relaxed">
+          Faster billing, smoother checkout, and real-time inventory syncing.
+        </p>
+      </div>
+    </div>
 
-                <p className="mt-4 text-[15px] leading-6 font-light text-gray-400">
-                  {item.description}
-                </p>
-              </div>
+    {/* Card 2 */}
+    <div className="pt-32 relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 flex gap-4">
+        {["🌐", "📱", "🚚"].map((icon, i) => (
+          <div
+            key={i}
+            className="w-16 h-16 rounded-2xl bg-[#111111] border border-white/10 shadow-2xl flex items-center justify-center text-2xl"
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
 
-              {/* Bottom Decorative */}
-              <div className="relative z-10 mt-10 flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-blue-400" />
-                <div className="h-[1px] flex-1 bg-gradient-to-r from-white/20 to-transparent" />
-              </div>
+      <div className="border-l border-gray-800 pl-6 text-left">
+        <h3 className="text-2xl font-normal text-white">
+          Ecommerce Selling
+        </h3>
 
-              {/* Background Number */}
-              <span className="absolute bottom-4 right-6 text-8xl font-bold text-white/[0.03]">
-                0{index + 1}
-              </span>
-            </div>
-          ))}
-        </div>
-      
-    </section>
+        <p className="text-gray-500 text-lg mt-3 leading-relaxed">
+          Sell from your website, mobile, and social platforms with one backend.
+        </p>
+      </div>
+    </div>
 
-           
-        </div>
+    {/* Card 3 */}
+    <div className="pt-32 relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 flex gap-4">
+        {["🏢", "📊", "🔄"].map((icon, i) => (
+          <div
+            key={i}
+            className="w-16 h-16 rounded-2xl bg-[#111111] border border-white/10 shadow-2xl flex items-center justify-center text-2xl"
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
 
-        <div className="max-w-screen-xl mx-auto flex flex-col justify-center bg-gradient-to-b from-[#0b1a3a] to-black rounded-t-4xl pt-20 relative mt-4">
+      <div className="border-l border-gray-800 pl-6 text-left">
+        <h3 className="text-2xl font-normal text-white">
+          Enterprise Control
+        </h3>
+
+        <p className="text-gray-500 text-lg mt-3 leading-relaxed">
+          Centralized management for branches, stock movement, and analytics.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+        <div className="max-w-screen-xl mx-auto flex flex-col justify-center bg-gradient-to-b from-[#0b1a3a] to-black rounded-t-4xl pt-10 lg:pt-20 relative mt-10 lg:mt-20">
         <div
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none opacity-[0.03]"
@@ -113,8 +147,8 @@ const Sell = () => {
           }}
         />
  
-          <div className='mb-8 ps-30'>
-            <p className='text-2xl font-light text-gray-300'>
+          <div className='mb-8 lg:ps-30 text-center lg:text-start'>
+            <p className='text-lg lg:text-2xl font-light text-gray-300'>
             All the tools you need to run and grow your business — from <br/>daily operations to
             enterprise-level management — in one ecosystem.
             </p>
@@ -123,7 +157,7 @@ const Sell = () => {
             src={demoWeb}
           width={1000}
           height={1000}
-          className="object-contain h-[500px] w-auto ps-12"
+          className="object-contain lg:h-[500px] w-auto ps-4 lg:ps-12"
         />
         </div>
   
