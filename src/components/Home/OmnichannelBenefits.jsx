@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 export default function OmnichannelBenefits() {
   return (
@@ -67,10 +68,18 @@ export default function OmnichannelBenefits() {
           {/* LEFT SIDE: VALUE PROPOSITION TEXT */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-normal text-zinc-100">
+            <Image
+                  src="/images/amplify-white.png"
+                  width={400}
+                  height={400}
+                  className="h-auto w-40"
+                  alt="amplify"
+                  priority
+                />
+              {/* <h2 className="text-2xl font-normal text-zinc-100">
                 One unified sync.<br />Massive customer loyalty.
-              </h2>
-              <p className="text-zinc-400 text-md light leading-relaxed pt-2">
+              </h2> */}
+              <p className="text-zinc-100 text-md light leading-relaxed pt-2">
                 By linking Meta, SMS, and Email under a single behavior layer, you turn fragmented storefront interactions into a high-converting growth cycle.
               </p>
             </div>
