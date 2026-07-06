@@ -170,7 +170,7 @@ const EnterprisePage = () => {
               <div key={i} className="bg-white/5 border border-white/10 p-5 rounded-[24px] backdrop-blur-sm group hover:bg-white/10 transition-all">
                 <div className="text-blue-500 mb-4 text-xl group-hover:scale-110 transition-transform duration-500">{stat.icon}</div>
                 <p className="text-xl font-bold text-white mb-1 tracking-tight">{stat.value}</p>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{stat.label}</p>
+                <p className="text-[10px] font-medium text-slate-500 uppercase tracking-widest">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -216,7 +216,7 @@ const EnterprisePage = () => {
                   >
                     {React.cloneElement(mod.icon, { strokeWidth: 2 })}
                   </div>
-                  <span className="text-5xl font-black text-slate-50/80 tracking-tighter select-none">
+                  <span className="text-5xl font-medium text-slate-50/80 tracking-tighter select-none">
                     {mod.id}
                   </span>
                 </div>
@@ -342,7 +342,7 @@ const EnterprisePage = () => {
             <div className="p-6 bg-gradient-to-br from-blue-600/20 to-transparent border border-blue-500/20 rounded-3xl">
                 <div className="flex items-center gap-4 text-white mb-2">
                     <FiFilter className="text-blue-400" />
-                    <span className="font-black text-sm uppercase tracking-widest">Global Filter Engine</span>
+                    <span className="font-medium text-sm uppercase tracking-widest">Global Filter Engine</span>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">Slice your entire enterprise data by any dimension instantly. No more waiting for reports to load.</p>
             </div>
@@ -373,7 +373,7 @@ const EnterprisePage = () => {
 
                 {/* Micro-Interaction Button */}
                 <div className="mt-4 pt-4 border-t border-white/5 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <button className="text-[10px] font-black text-blue-500 uppercase tracking-widest flex items-center gap-2">
+                    <button className="text-[10px] font-medium text-blue-500 uppercase tracking-widest flex items-center gap-2">
                         Generate Insights <FiDownload />
                     </button>
                 </div>
@@ -403,10 +403,10 @@ const EnterprisePage = () => {
               
               <div className="w-full lg:w-auto">
                 <div className="bg-white rounded-[40px] p-10 text-center">
-                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-4">Enterprise Access</p>
+                  <p className="text-[10px] font-medium text-slate-400 uppercase tracking-[0.3em] mb-4">Enterprise Access</p>
                   <p className="text-5xl font-bold text-slate-900 mb-2">Custom</p>
                   <p className="text-slate-500 text-sm mb-8">Tailored for your business volume</p>
-                  <button className="w-full py-5 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20">
+                  <button className="w-full py-5 bg-blue-600 text-white rounded-2xl font-medium text-xs uppercase tracking-widest hover:bg-blue-700 transition-all flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20">
                     Contact Sales <FiArrowRight />
                   </button>
                 </div>
@@ -423,7 +423,7 @@ const EnterprisePage = () => {
             <FiGlobe className="text-slate-300" size={32} />
             <p className="text-slate-500 font-medium max-w-[200px]">Powers 500+ retail branches across Bangladesh.</p>
           </div>
-          <div className="flex gap-12 grayscale opacity-30 font-black text-2xl text-slate-900 tracking-tighter italic">
+          <div className="flex gap-12 grayscale opacity-30 font-medium text-2xl text-slate-900 tracking-tighter italic">
             <span>RETAILCO</span>
             <span>MEGASHOP</span>
             <span>NEXUS</span>

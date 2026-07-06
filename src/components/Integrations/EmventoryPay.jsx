@@ -30,7 +30,7 @@ const EmventoryPay = () => {
                 <FiUnlock /> Ready-to-use Gateway
               </div>
               
-              <h3 className="text-3xl md:text-5xl font-black text-white mb-8 leading-[0.95]">
+              <h3 className="text-3xl md:text-5xl font-medium text-white mb-8 leading-[0.95]">
                 emventory 
                 <span className="text-blue-500">Pay</span>
               </h3>

@@ -66,15 +66,15 @@ const Nav = () => {
   return (
     <>
       {/* Navbar */}
-      <section className="fixed top-3 md:top-4 left-0 w-full z-[100] px-3 md:px-4">
+      <section className="fixed top-0 left-0 w-full z-[100]">
         <div
-          className={`transition-all duration-500 max-w-screen-xl mx-auto rounded-2xl md:rounded-full h-15 md:h-16 border border-dashed ${
+          className={`transition-all duration-500 w-full mx-auto h-16 md:h-18 ${
             scrolled
-              ? "bg-black/65 backdrop-blur-2xl border-white/20 shadow-2xl"
-              : "bg-black border-white/20"
+              ? "bg-black shadow-2xl"
+              : ""
           }`}
         >
-          <div className="flex justify-between items-center h-full px-4 md:px-6">
+          <div className="max-w-screen-xl mx-auto flex justify-between items-center h-full px-4 md:px-6">
             {/* Logo */}
             <Link href="/home" className="flex items-center">
               <div className="w-28 md:w-36">

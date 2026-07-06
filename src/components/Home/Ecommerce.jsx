@@ -305,7 +305,7 @@ const ProcessVisualizer = () => {
                           <header className="border-b border-gray-100 px-3 py-2 bg-white flex justify-between items-center sticky top-0 z-10">
                             {/* Brand Logo */}
                             <div className="flex items-center gap-2">
-                              <div className="w-5 h-5 rounded-sm bg-blue-600 flex items-center justify-center text-white text-xs font-black">
+                              <div className="w-5 h-5 rounded-sm bg-blue-600 flex items-center justify-center text-white text-xs font-medium">
                                 V
                               </div>
                               <span className="text-xs font-bold text-gray-800 tracking-tight">

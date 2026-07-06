@@ -102,7 +102,7 @@ const EcommerceLanding = () => {
                <div className="bg-white/5 px-4 py-2 rounded-full text-[10px] font-mono text-slate-400 border border-white/5 italic">
                   your-store.emventory.com
                </div>
-               <button className="bg-emerald-500/10 text-emerald-400 text-[10px] font-black px-4 py-2 rounded-lg border border-emerald-500/20 uppercase tracking-widest">
+               <button className="bg-emerald-500/10 text-emerald-400 text-[10px] font-medium px-4 py-2 rounded-lg border border-emerald-500/20 uppercase tracking-widest">
                   Publish Live
                </button>
             </div>
@@ -118,7 +118,7 @@ const EcommerceLanding = () => {
                {/* Hero Content Mock */}
                <div className="flex-1 flex flex-col items-center justify-center text-center px-12">
                   <div className="relative inline-block mb-4">
-                    <h2 className="text-4xl font-black text-slate-900 leading-tight">Summer '26<br/>Collection</h2>
+                    <h2 className="text-4xl font-medium text-slate-900 leading-tight">Summer '26<br/>Collection</h2>
                     {/* Floating Selection Indicator */}
                     <div className="absolute -top-4 -right-4 bg-blue-600 p-1.5 rounded-md shadow-lg text-white animate-pulse">
                         <FiMousePointer size={12} />
@@ -133,7 +133,7 @@ const EcommerceLanding = () => {
 
             {/* Floating Floating Customizer Panel (Left) */}
             <div className="absolute -left-12 top-1/3 bg-[#1e293b] border border-white/10 rounded-2xl shadow-2xl p-4 w-44 backdrop-blur-xl animate-float-slow">
-               <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-4">Typography</p>
+               <p className="text-[9px] font-medium text-slate-500 uppercase tracking-widest mb-4">Typography</p>
                <div className="space-y-3">
                   <div className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-blue-500/50">
                     <span className="text-[11px] text-white font-bold">Inter Tight</span>
@@ -149,7 +149,7 @@ const EcommerceLanding = () => {
             <div className="absolute -right-8 bottom-12 bg-white rounded-2xl shadow-2xl border border-slate-100 p-4 w-40 animate-float-delayed">
                <div className="flex items-center gap-2 mb-3">
                   <LuPalette size={14} className="text-blue-600" />
-                  <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Brand Colors</p>
+                  <p className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">Brand Colors</p>
                </div>
                <div className="grid grid-cols-4 gap-2">
                   <div className="h-6 w-6 rounded-full bg-blue-600 ring-2 ring-blue-600 ring-offset-2"></div>
@@ -209,7 +209,7 @@ const EcommerceLanding = () => {
       <div className="group relative bg-white border border-slate-200 rounded-[32px] p-8 hover:shadow-lg hover:-translate-y-2 transition-all duration-500">
         
         {/* Number */}
-        <div className="absolute top-6 right-6 text-6xl font-black text-slate-100">
+        <div className="absolute top-6 right-6 text-6xl font-medium text-slate-100">
           01
         </div>
 
@@ -241,7 +241,7 @@ const EcommerceLanding = () => {
         <div className="absolute top-0 right-0 w-40 h-40 bg-blue-500/20 blur-[80px] rounded-full"></div>
 
         {/* Number */}
-        <div className="absolute top-6 right-6 text-6xl font-black text-white/5">
+        <div className="absolute top-6 right-6 text-6xl font-medium text-white/5">
           02
         </div>
 
@@ -279,7 +279,7 @@ const EcommerceLanding = () => {
       <div className="group relative bg-white border border-slate-200 rounded-[32px] p-8 hover:shadow-lg hover:-translate-y-2 transition-all duration-500">
         
         {/* Number */}
-        <div className="absolute top-6 right-6 text-6xl font-black text-slate-100">
+        <div className="absolute top-6 right-6 text-6xl font-medium text-slate-100">
           03
         </div>
 
@@ -300,13 +300,13 @@ const EcommerceLanding = () => {
         {/* Live Status */}
         <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-5 flex items-center justify-between">
           <div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-emerald-600 mb-1">
+            <p className="text-[10px] font-medium uppercase tracking-widest text-emerald-600 mb-1">
               Store Status
             </p>
             <p className="font-bold text-slate-900">Live Successfully</p>
           </div>
 
-          <div className="h-10 w-10 rounded-full bg-emerald-500 flex items-center justify-center text-white font-black">
+          <div className="h-10 w-10 rounded-full bg-emerald-500 flex items-center justify-center text-white font-medium">
             ✓
           </div>
         </div>
@@ -330,7 +330,7 @@ const EcommerceLanding = () => {
             {/* LEFT SIDE: THE CAPABILITY */}
             <div className="space-y-8">
               <div>
-                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+                <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-medium uppercase tracking-[0.3em] mb-6">
                   <FiCpu className="animate-spin-slow" /> Neural Processing Engine
                 </div>
                 <h2 className="text-4xl md:text-5xl font-normal text-white leading-[1.2] mb-6">
@@ -377,7 +377,7 @@ const EcommerceLanding = () => {
 
                 {/* Results Preview */}
                 <div className="space-y-4">
-                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Showing results for "Party wear, maximum price range 5000 BDT"</p>
+                  <p className="text-[10px] font-medium text-slate-500 uppercase tracking-widest">Showing results for "Party wear, maximum price range 5000 BDT"</p>
                   <div className="grid grid-cols-2 gap-4">
                     {[1, 2].map((i) => (
                       <div key={i} className="bg-white/5 rounded-2xl p-3 border border-white/5">
@@ -409,11 +409,11 @@ const EcommerceLanding = () => {
       <section className="py-24 text-center">
         <div className="max-w-3xl mx-auto px-6">
           <FiGlobe className="mx-auto text-blue-600 mb-8" size={48} />
-          <h2 className="text-4xl font-black text-slate-900 mb-6">Your brand, your domain.</h2>
+          <h2 className="text-4xl font-medium text-slate-900 mb-6">Your brand, your domain.</h2>
           <p className="text-slate-500 text-lg mb-12">
             No more `emventory.com/shopname`. Use your professional identity and build long-term SEO value with a custom domain.
           </p>
-          <button className="flex items-center gap-3 mx-auto px-12 py-6 bg-blue-700 text-white rounded-3xl font-black text-sm uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
+          <button className="flex items-center gap-3 mx-auto px-12 py-6 bg-blue-700 text-white rounded-3xl font-medium text-sm uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
             Start Your Store <FiArrowRight />
           </button>
         </div>

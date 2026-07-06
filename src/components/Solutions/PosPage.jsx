@@ -135,15 +135,15 @@ const POSDeepDive = () => {
                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-4 animate-bounce-slow">
                   <div className="h-10 w-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 font-bold">৳</div>
                   <div>
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Last Transaction</p>
-                    <p className="text-xl font-black text-slate-900 leading-none mt-1">4,250.00</p>
+                    <p className="text-[10px] font-medium text-slate-400 uppercase tracking-widest leading-none">Last Transaction</p>
+                    <p className="text-xl font-medium text-slate-900 leading-none mt-1">4,250.00</p>
                   </div>
                </div>
 
                {/* Floating Network Badge */}
                <div className="absolute -top-6 -right-6 bg-slate-900 border border-white/10 p-4 rounded-2xl shadow-2xl flex items-center gap-3 backdrop-blur-xl">
                   <div className="h-2 w-2 rounded-full bg-blue-500 animate-ping"></div>
-                  <span className="text-[10px] font-black text-white uppercase tracking-widest">Real-time Cloud Sync</span>
+                  <span className="text-[10px] font-medium text-white uppercase tracking-widest">Real-time Cloud Sync</span>
                </div>
             </div>
           </div>
@@ -360,8 +360,8 @@ const POSDeepDive = () => {
                     ))}
                     <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
                         <div>
-                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Total Daily Revenue</p>
-                            <p className="text-3xl font-black text-slate-900">৳ 1,42,500</p>
+                            <p className="text-[10px] font-medium text-slate-400 uppercase tracking-widest">Total Daily Revenue</p>
+                            <p className="text-3xl font-medium text-slate-900">৳ 1,42,500</p>
                         </div>
                         <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center">
                             <FiBarChart2 className="text-blue-600" />
