@@ -120,16 +120,13 @@ const Footer = () => {
     Support
   </h4>
   <div className="space-y-3 text-slate-400">
-                <Link href="/about" className="block hover:text-blue-400 transition-colors">
-                Feature Guides
+                <Link href="/feature-guide" className="block hover:text-blue-400 transition-colors">
+                User Guide
                 </Link>
                 <Link href="/blog" className="block hover:text-blue-400 transition-colors">
                   Tutorial
                 </Link>
-                <Link href="/pricing" className="block hover:text-blue-400 transition-colors">
-                Help Center
-                </Link>
-                <Link href="/contact" className="block hover:text-blue-400 transition-colors">
+                <Link href="/update-log" className="block hover:text-blue-400 transition-colors">
                   New Updates
                 </Link>
               </div>
@@ -147,8 +144,8 @@ const Footer = () => {
                 <Link href="/blog" className="block hover:text-blue-400 transition-colors">
                   Blog
                 </Link>
-                <Link href="/contact" className="block hover:text-blue-400 transition-colors">
-                  Contact
+                <Link href="/help" className="block hover:text-blue-400 transition-colors">
+                Help Center
                 </Link>
               </div>
             </div>

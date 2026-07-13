@@ -5,7 +5,7 @@ import Nav from "@/components/Navbar/Nav";
 import Nav2 from "@/components/Navbar/Nav2";
 
 // Add more path -> nav mappings here as needed.
-const HOME_PATHS = ["/", "/home", "/about"];
+const HOME_PATHS = ["/", "/home", "/about", "/update-log", "/feature-guide", "/help"];
 
 const SiteNav = () => {
   const pathname = usePathname();
