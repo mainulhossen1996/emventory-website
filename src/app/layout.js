@@ -1,12 +1,11 @@
 import "./globals.css";
-import Nav from "@/components/Navbar/Nav";
-import { Fira_Sans } from "next/font/google";
+import SiteNav from "@/components/Navbar/SiteNav";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 // Google Font
-const firaSans = Fira_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: [
-    "100",
     "200",
     "300",
     "400",
@@ -14,7 +13,6 @@ const firaSans = Fira_Sans({
     "600",
     "700",
     "800",
-    "900",
   ],
 });
 
@@ -27,8 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={firaSans.className}>
-        <Nav />
+      <body className={plusJakartaSans.className}>
+        <SiteNav />
         {children}
       </body>
     </html>

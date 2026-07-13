@@ -6,6 +6,7 @@ import { IntegrationSteps } from '@/components/AiSearch/Integration';
 import { PricingCards } from '@/components/AiSearch/Pricing';
 import { InteractiveShowcase } from '@/components/AiSearch/Showcase';
 import WhyAiSearch from '@/components/AiSearch/WhyAi';
+import Footer from '@/components/Navbar/Footer';
 import React from 'react'
 
 
@@ -20,6 +21,7 @@ const page = () => {
     <PricingCards/>
     <BenefitsMetrics/>
     <FaqAccordion/>
+    <Footer/>
     </>
   )
 }

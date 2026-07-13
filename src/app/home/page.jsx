@@ -22,9 +22,9 @@ const page = () => {
        <Sell/>
        <Ecommerce/>
        <IntegrationMatrix />
+       <AiCommerce/>
        <MarketingChannels/>
        <OmnichannelBenefits/>
-       <AiCommerce/>
        <EmventoryPay/>
        <BusinessTypes/>
        <EmventoryMetricsSection/>

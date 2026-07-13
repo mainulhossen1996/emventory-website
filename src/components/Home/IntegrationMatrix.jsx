@@ -14,7 +14,7 @@ export default function IntegrationMatrix() {
       <div className="w-full max-w-screen-2xl mx-auto relative z-10">
         
 
-        <div className="text-center max-w-3xl mx-auto  space-y-3 px-4">
+        <div className="text-center max-w-4xl mx-auto  space-y-3 px-4">
 
           <h2 className="text-2xl sm:text-5xl font-medium text-slate-900 tracking-tight mx-auto leading-tight">
             One platform.<br/>Every operational node connected.
