@@ -3,7 +3,7 @@ import {
   FiShoppingBag, FiCreditCard, FiTruck, FiLayers, 
   FiRefreshCw, FiPieChart, FiUsers, FiAward, 
   FiTrendingUp, FiUserCheck, FiDatabase, FiMessageSquare,
-  FiCpu, FiGitCommit, FiBriefcase, FiGift, FiSliders
+  FiCpu, FiGitCommit, FiBriefcase, FiGift, FiSliders, FiMonitor, FiGlobe
 } from 'react-icons/fi';
 
 export default function IntegrationMatrix() {
@@ -41,10 +41,11 @@ export default function IntegrationMatrix() {
             {/* Left Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
             
             <div className="border-r border-b border-slate-200/70 p-5 flex flex-col justify-between bg-white hover:bg-slate-50/50 transition-colors min-h-[135px]">
-              <FiSliders className="text-slate-400" size={16} />
+              
+              <FiCpu className="text-slate-400" size={16} />
               <div>
-                <h4 className="text-[16px] font-medium text-slate-800">Omni-channel POS</h4>
-                <p className="text-[13px] text-slate-400 mt-0.5">Cloud storefront registers</p>
+                <h4 className="text-[16px] font-medium text-slate-800">Multi-Branch Sync</h4>
+                <p className="text-[13px] text-slate-400 mt-0.5">Real-time localized ledgers</p>
               </div>
             </div>
 
@@ -57,10 +58,10 @@ export default function IntegrationMatrix() {
             </div>
 
             <div className="border-r border-b border-slate-200/70 p-5 flex flex-col justify-between bg-white hover:bg-slate-50/50 transition-colors min-h-[135px]">
-              <FiCpu className="text-slate-400" size={16} />
+            <FiSliders className="text-slate-400" size={16} />
               <div>
-                <h4 className="text-[16px] font-medium text-slate-800">Multi-Branch Sync</h4>
-                <p className="text-[13px] text-slate-400 mt-0.5">Real-time localized ledgers</p>
+                <h4 className="text-[16px] font-medium text-slate-800">Supplier Record</h4>
+                <p className="text-[13px] text-slate-400 mt-0.5">Billing and product transaction</p>
               </div>
             </div>
 
@@ -77,18 +78,57 @@ export default function IntegrationMatrix() {
 
             {/* Left Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
             
-            {/* E-COMMERCE CLOUD */}
-            <div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-blue-500/[0.01] to-transparent min-h-[175px]">
+           
+
+            {/* MULTI-CHANNEL CLOUD POS */}
+<div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-blue-500/[0.01] to-transparent min-h-[175px]">
+  <div className="flex justify-between items-start">
+    <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+      <FiMonitor size={14} /> {/* Or use FiCpu / FiHardDrive / FiLayers depending on your imported icons */}
+    </div>
+    <span className="text-[9px] font-mono font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">Omni-Sync</span>
+  </div>
+  <div className="mt-6">
+    <h4 className="text-lg font-medium text-slate-900">Cloud Terminal POS</h4>
+    <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
+    Connect multiple physical retail outlets directly with your e-commerce store to automatically keep stock levels, sales, and products perfectly synced in real time.
+    </p>
+  </div>
+</div>
+
+{/* E-COMMERCE CLOUD */}
+<div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-indigo-500/[0.01] to-transparent min-h-[175px]">
+  <div className="flex justify-between items-start">
+    <div className="w-7 h-7 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600">
+      <FiGlobe size={14} /> {/* Swapped to a global web icon for the online store concept */}
+    </div>
+    <span className="text-[9px] font-mono font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Online Store</span>
+  </div>
+  <div className="mt-6">
+    <h4 className="text-lg font-medium text-slate-900">E-commerce Cloud</h4>
+    <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
+      Launch a beautiful online storefront instantly. Easily update your product catalog, track customer actions, and handle customer checkouts securely without any hassle.
+    </p>
+  </div>
+</div>
+            {/* Right Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
+
+
+
+            {/* Left Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
+            
+            {/* LOGISTICS & FULFILLMENT */}
+            <div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-indigo-500/[0.01] to-transparent min-h-[175px]">
               <div className="flex justify-between items-start">
-                <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
-                  <FiShoppingBag size={14} />
+                <div className="w-7 h-7 rounded-lg bg-cyan-50 border border-cyan-100 flex items-center justify-center text-cyan-600">
+                  <FiTruck size={14} />
                 </div>
-                <span className="text-[9px] font-mono font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">Storefront</span>
+                <span className="text-[9px] font-mono font-medium text-cyan-600 bg-cyan-50 px-2 py-0.5 rounded border border-cyan-100">Logistics</span>
               </div>
               <div className="mt-6">
-                <h4 className="text-lg font-medium text-slate-900">E-commerce Cloud</h4>
+                <h4 className="text-lg font-medium text-slate-900">Delivery Pipelines</h4>
                 <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
-                  Native multi-tenant checkout environments. Sync global catalog updates, deploy dynamic pixel events, and automate web checkout funnels seamlessly.
+                  Automated parcel routes linking directly to dispatch APIs. Generate shipping manifests, waybill records, and trigger localized sorting hooks.
                 </p>
               </div>
             </div>
@@ -105,43 +145,6 @@ export default function IntegrationMatrix() {
                 <h4 className="text-lg font-medium text-slate-900">Unified Payments</h4>
                 <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
                   Direct routing architecture mapping transaction parameters across local and global digital cards with instant web reconciliation.
-                </p>
-              </div>
-            </div>
-            {/* Right Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
-
-
-
-            {/* Left Blank */} <div className="border-r border-b border-slate-200/70 bg-slate-50/[0.02]" />
-            
-            {/* LOGISTICS & FULFILLMENT */}
-            <div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-indigo-500/[0.01] to-transparent min-h-[175px]">
-              <div className="flex justify-between items-start">
-                <div className="w-7 h-7 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600">
-                  <FiTruck size={14} />
-                </div>
-                <span className="text-[9px] font-mono font-medium text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">Logistics</span>
-              </div>
-              <div className="mt-6">
-                <h4 className="text-lg font-medium text-slate-900">Fulfillment Pipelines</h4>
-                <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
-                  Automated parcel routes linking directly to dispatch APIs. Generate shipping manifests, waybill records, and trigger localized sorting hooks.
-                </p>
-              </div>
-            </div>
-
-            {/* META LAYER */}
-            <div className="col-span-2 border-r border-b border-slate-200/70 p-6 flex flex-col justify-between relative bg-gradient-to-br from-pink-500/[0.01] to-transparent min-h-[175px]">
-              <div className="flex justify-between items-start">
-                <div className="w-7 h-7 rounded-lg bg-pink-50 border border-pink-100 flex items-center justify-center text-pink-600">
-                  <FiLayers size={14} />
-                </div>
-                <span className="text-[9px] font-mono font-medium text-pink-600 bg-pink-50 px-2 py-0.5 rounded border border-pink-100">Marketing</span>
-              </div>
-              <div className="mt-6">
-                <h4 className="text-lg font-medium text-slate-900">Meta CAPI Marketing</h4>
-                <p className="text-[13px] text-slate-500 mt-1 leading-relaxed font-normal">
-                  Server-to-server tracking nodes pushing audience telemetry accurately. Bypass user-agent data blocking to optimize ad attribution metrics.
                 </p>
               </div>
             </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function OmnichannelBenefits() {
   return (
-    <section className="bg-black py-24 px-6 sm:px-8 lg:px-16 text-white overflow-hidden selection:bg-blue-700 selection:text-white">
+    <section className="bg-black py-24 pt-0 px-6 sm:px-8 lg:px-16 text-white overflow-hidden selection:bg-blue-700 selection:text-white">
       {/* Interactive Automation Timeline Engine */}
       <style>{`
         /* Global 8-Second Timing Cycle for the entire workflow */

@@ -13,7 +13,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const Nav = () => {
+const NavBlack = () => {
   const pathname = usePathname();
 
   const isActive = (path) => pathname === path;
@@ -86,11 +86,7 @@ const Nav = () => {
       {/* Navbar */}
       <section className="fixed top-0 left-0 w-full z-[100]">
         <div
-          className={`transition-all duration-500 w-full mx-auto h-16 md:h-18 ${
-            scrolled
-              ? "bg-black shadow-2xl"
-              : ""
-          }`}
+          className="w-full mx-auto h-16 md:h-18 bg-black shadow-2xl"
         >
           <div className="max-w-screen-xl mx-auto flex justify-between items-center h-full px-4 md:px-6">
             {/* Logo */}
@@ -504,4 +500,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavBlack;

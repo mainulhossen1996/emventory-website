@@ -9,7 +9,7 @@ const pricingTiers = [
     unit: "Free forever",
     desc: "For testing things out before you go live.",
     features: [
-      "10 searches / day",
+      "300 searches / month",
       "Standard semantic search",
       "Auto-correct for typos",
       "Community support",
@@ -20,12 +20,12 @@ const pricingTiers = [
     accent: "slate",
   },
   {
-    name: "Growth",
+    name: "Starter",
     price: "500",
     unit: "BDT / month",
     desc: "For a store that's starting to see real traffic.",
     features: [
-      "1,000 searches / month",
+      "3,000 searches / month",
       "Everything in Starter, plus:",
       "Multi-language search",
       "Voice search",
@@ -34,15 +34,15 @@ const pricingTiers = [
     cta: "Start Growth plan",
     highlight: false,
     icon: <FiGlobe size={16} />,
-    accent: "blue",
+    accent: "slate",
   },
   {
-    name: "Professional",
+    name: "Growth",
     price: "1,000",
     unit: "BDT / month",
     desc: "For catalogs where search abandonment is costing you sales.",
     features: [
-      "2,000 searches / month",
+      "7,500 searches / month",
       "Everything in Growth, plus:",
       "Priority query routing",
       "Live accuracy dashboard",
@@ -190,7 +190,7 @@ export const PricingCards = () => {
             headerInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="text-xs font-bold text-blue-600 tracking-widest uppercase block mb-3">Pricing</span>
+         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold uppercase tracking-wider mb-4">Pricing</div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
             Pay for what you search.
           </h2>
@@ -215,8 +215,8 @@ export const PricingCards = () => {
         >
           <FiInfo size={15} className="text-blue-500 shrink-0" />
           <span>
-            Go over your monthly limit on Growth or Professional? Extra searches are billed at{" "}
-            <span className="font-semibold text-slate-700">৳0.50 each</span> — no cutoff, no penalty rate.
+            Go over your monthly limit on Starter or Growth plan? Extra searches are billed at{" "}
+            <span className="font-semibold text-slate-700">৳0.25 each</span> — no cutoff, no penalty rate.
           </span>
         </div>
       </div>

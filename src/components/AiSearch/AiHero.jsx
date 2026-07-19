@@ -81,8 +81,8 @@ const AiHero = ({ onCtaClick }) => {
         
         {/* Context Top Badge */}
         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-[#A9C6FF] text-[11px] font-mono tracking-wider mb-8 backdrop-blur-md shadow-2xl">
-          <FiCpu className="text-[#2DD4BF] animate-pulse" size={12} />
-          <span className="uppercase text-[10px] tracking-widest text-slate-400">Context Engine v4.2: <span className="text-white">Multimodal Native</span></span>
+          <FiActivity className="text-[#2DD4BF] animate-pulse" size={12} />
+          <span className="uppercase text-[10px] tracking-widest text-white">Find with anything.</span>
         </div>
 
         {/* Typographic Anchor */}

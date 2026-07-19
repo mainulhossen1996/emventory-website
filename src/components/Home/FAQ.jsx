@@ -50,8 +50,8 @@ const FAQ = () => {
 
           {/* Left Content */}
           <div>
-            <h1 className="text-5xl lg:text-6xl leading-tight ">
-              Need Help? <br /> Start Here.
+            <h1 className="text-4xl lg:text-5xl font-bold leading-14">
+              Need Help? <br /> <span className='text-gray-400'>Start Here.</span>
             </h1>
 
             <p className="text-gray-500 text-lg mt-6 leading-relaxed max-w-lg">

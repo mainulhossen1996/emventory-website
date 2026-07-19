@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Mic, Search, ArrowRight, Zap, Sparkles, ScanSearch } from "lucide-react";
 import AiSearchPreview from "./AiSearch";
+import Link from "next/link";
 
 const queries = [
   "white sneakers under ৳3,000",
@@ -99,7 +100,7 @@ const AiCommerce = () => {
   return (
     <section
       className="relative overflow-hidden py-24"
-      style={{ background: "linear-gradient(180deg, #F8F9FB 0%, #EEF0F3 45%, #F8F9FB 100%)" }}
+      style={{ background: "linear-gradient(180deg, #F8F9FB 0%, #EEF0F3 45%)" }}
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
@@ -191,7 +192,7 @@ const AiCommerce = () => {
               AI Commerce
             </div>
 
-            <h2 className="esf-reveal esf-d2 esf-display text-3xl lg:text-5xl font-medium text-slate-900 leading-[1.15] mb-6">
+            <h2 className="esf-reveal esf-d2 esf-display text-4xl lg:text-6xl font-medium text-slate-900 leading-[1.15] mb-6">
               Search products
               <br />
               the way humans
@@ -208,14 +209,14 @@ const AiCommerce = () => {
               </span>
             </h2>
 
-            <p className="esf-reveal esf-d3 text-lg text-slate-500 leading-relaxed max-w-xl mb-9">
+            <p className="esf-reveal esf-d3 text-md text-slate-500 leading-relaxed max-w-xl mb-9">
               Shoppers type or say what they want in plain language — style,
               color, budget, occasion — and the AI reads intent, not just
               keywords, to surface the closest match instantly.
             </p>
 
             {/* Feature list */}
-            <div className="esf-reveal esf-d4 flex flex-col gap-3 mb-9">
+            <div className="esf-reveal esf-d4 flex gap-3 mb-4">
               {features.map((item, i) => (
                 <div
                   key={i}
@@ -229,31 +230,19 @@ const AiCommerce = () => {
                   </div>
                   <div className="min-w-0">
                     <p className="text-sm font-semibold text-slate-800 leading-tight">{item.title}</p>
-                    <p className="text-xs text-slate-400 leading-tight mt-0.5">{item.desc}</p>
+                    {/* <p className="text-xs text-slate-400 leading-tight mt-0.5">{item.desc}</p> */}
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* CTA */}
-            <div className="esf-reveal esf-d5 flex items-center gap-3 mb-10">
-              <button
-                className="esf-cta group relative overflow-hidden text-white px-8 py-3.5 rounded-full font-medium transition-all flex items-center gap-2 text-sm shadow-lg cursor-pointer"
-                style={{ background: "linear-gradient(90deg, #2F5DFA, #1339B0)", boxShadow: "0 12px 24px -8px rgba(47,93,250,0.5)" }}
-              >
-                <span className="esf-shine" />
-                <span className="relative">Try AI search</span>
-                <ArrowRight size={16} className="relative group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="px-6 py-3.5 rounded-full font-medium text-sm text-slate-600 border border-slate-200 hover:border-slate-300 hover:bg-white transition-all cursor-pointer">
-                See how it works
-              </button>
-            </div>
+           
+            
 
             {/* Marquee of real natural-language queries */}
-            <div className="esf-reveal esf-d6 esf-marquee-wrap relative overflow-hidden -mx-1 px-1 py-1">
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-10 z-10" style={{ background: "linear-gradient(90deg, #F8F9FB, transparent)" }} />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-10 z-10" style={{ background: "linear-gradient(270deg, #F8F9FB, transparent)" }} />
+            <div className="esf-reveal esf-d6 esf-marquee-wrap relative overflow-hidden -mx-1 px-1 py-1 mb-4 mb-8">
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-10 z-10" style={{ background: "linear-gradient(90deg, #EEF0F3, transparent)" }} />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-10 z-10" style={{ background: "linear-gradient(270deg, #EEF0F0, transparent)" }} />
               <div className="esf-track flex gap-2.5 w-max">
                 {[...queries, ...queries].map((q, i) => (
                   <span
@@ -266,6 +255,18 @@ const AiCommerce = () => {
                 ))}
               </div>
             </div>
+
+             {/* CTA */}
+            <Link href="/aisearch" passHref legacyBehavior>
+  <a 
+    className="esf-cta group relative overflow-hidden text-white px-8 py-3.5 rounded-full font-medium transition-all inline-flex items-center gap-2 text-sm shadow-lg cursor-pointer"
+    style={{ background: "linear-gradient(90deg, #2F5DFA, #1339B0)", boxShadow: "0 12px 24px -8px rgba(47,93,250,0.5)" }}
+  >
+    <span className="esf-shine" />
+    <span className="relative">Try AI search</span>
+    <ArrowRight size={16} className="relative group-hover:translate-x-1 transition-transform" />
+  </a>
+</Link>
           </div>
 
           {/* RIGHT SIDE */}

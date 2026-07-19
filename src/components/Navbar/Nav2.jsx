@@ -22,6 +22,8 @@ const NavDark = () => {
   const [scrolled, setScrolled] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,6 +63,22 @@ const NavDark = () => {
       href: "/enterprise",
       icon: <Shield size={18} />,
     },
+  ];
+
+  const products = [
+    {
+      title: "Trolly Ai",
+      desc: "Fastest searching experience",
+      href: "/aisearch",
+      icon: "/images/trolly-icon.png",
+    },
+    {
+      title: "Amplify",
+      desc: "Centralize marketing automation",
+      href: "/amplify",
+      icon: "/images/amplify-icon.png",
+    },
+
   ];
 
   const navItemClass = (active) =>
@@ -118,6 +136,66 @@ const NavDark = () => {
               >
                 Features
               </Link>
+
+              {/* Product */}
+              <div
+                className="relative py-5"
+                onMouseEnter={() => setProductsOpen(true)}
+                onMouseLeave={() => setProductsOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 transition-colors ${
+                    productsOpen
+                      ? "text-blue-400"
+                      : scrolled
+                      ? "text-white hover:text-blue-400"
+                      : "text-gray-800 hover:text-blue-500"
+                  }`}
+                >
+                  Products
+                  <ChevronDown
+                    size={15}
+                    className={`transition-transform duration-300 ${
+                      productsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`absolute top-full -left-10 w-80 pt-2 transition-all duration-300 ${
+                    productsOpen
+                      ? "opacity-100 visible translate-y-0"
+                      : "opacity-0 invisible -translate-y-2"
+                  }`}
+                >
+                  <div className="bg-[#0b1120]/95 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl p-3">
+                    {products.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.href}
+                        className="flex items-center gap-4 p-3 rounded-2xl hover:bg-white/5 transition-all group"
+                      >
+                        <div className="h-11 w-11  flex items-center justify-center text-blue-400  group-hover:text-white transition-all">
+                        <img 
+    src={item.icon} 
+    alt="Icon" 
+    className="w-10 h-10 object-contain" 
+  />
+                        </div>
+
+                        <div>
+                          <p className="text-white text-sm font-semibold">
+                            {item.title}
+                          </p>
+                          <p className="text-slate-400 text-xs mt-0.5">
+                            {item.desc}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               {/* Solutions */}
               <div
@@ -222,7 +300,7 @@ const NavDark = () => {
             {/* Mobile Button */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="md:hidden h-10 w-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white"
+              className="md:hidden h-10 w-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-black"
             >
               <CgMenuLeftAlt size={24} />
             </button>
@@ -281,13 +359,71 @@ const NavDark = () => {
                 <ArrowRight size={16} className="text-gray-400" />
               </Link>
 
+              {/* Mobile Products */}
+              <div className="overflow-hidden">
+                <button
+                  onClick={() =>
+                    setMobileProductsOpen(!mobileProductsOpen)
+                  }
+                  className="w-full flex items-center justify-between px-4 py-4 "
+                >
+                  <span className="text-[15px] font-semibold text-gray-800">
+                    Products
+                  </span>
+
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform duration-300 ${
+                      mobileProductsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`transition-all duration-300 overflow-hidden ${
+                    mobileProductsOpen
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="p-2">
+                    {products.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-all"
+                      >
+ 
+                        <div className="h-9 w-9  flex items-center justify-center  text-blue-600">
+                        <img 
+    src={item.icon} 
+    alt="Icon" 
+    className="w-8 h-8 object-contain" 
+  />
+                        </div>
+
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">
+                            {item.title}
+                          </p>
+                          <p className="text-[11px] text-gray-400">
+                            {item.desc}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               {/* Mobile Solutions */}
-              <div className="rounded-2xl border border-gray-100 overflow-hidden">
+              <div className="overflow-hidden">
                 <button
                   onClick={() =>
                     setMobileSolutionsOpen(!mobileSolutionsOpen)
                   }
-                  className="w-full flex items-center justify-between px-4 py-4 bg-gray-50"
+                  className="w-full flex items-center justify-between px-4 py-4"
                 >
                   <span className="text-[15px] font-semibold text-gray-800">
                     Solutions

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiSolidMegaphone } from "react-icons/bi";
+import { FiChevronDown } from "react-icons/fi";
 
 const EmailIcon = () => (
   <svg viewBox="0 0 48 48" className="h-9 w-9" fill="none">
@@ -223,7 +224,7 @@ export default function MarketingChannels() {
   <div className="flex flex-col sm:flex-row items-center gap-4">
     
     {/* Primary CTA */}
-    <button className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-blue-700 px-8 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-[0_15px_40px_rgba(29,78,216,0.45)] cursor-pointer">
+    {/* <button className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-blue-700 px-8 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-[0_15px_40px_rgba(29,78,216,0.45)] cursor-pointer">
       <span className="absolute -left-20 top-0 h-full w-16 rotate-12 bg-white/20 transition-all duration-700 group-hover:left-[120%]" />
 
       <span className="relative z-10">
@@ -243,25 +244,15 @@ export default function MarketingChannels() {
           d="M13 5l7 7-7 7M5 12h15"
         />
       </svg>
-    </button>
+    </button> */}
 
     {/* Secondary CTA */}
     <button className="group inline-flex items-center gap-2 rounded-xl border border-zinc-700 hover:border-zinc-100  px-8 py-4 text-sm font-medium text-zinc-300 transition-all duration-300 hover:-translate-y-1 hover:text-white cursor-pointer">
       <span>Learn More</span>
+      <FiChevronDown 
+  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" 
+/>
 
-      <svg
-        className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
     </button>
 
   </div>

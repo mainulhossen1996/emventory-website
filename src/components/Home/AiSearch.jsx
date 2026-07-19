@@ -13,9 +13,36 @@ const chips = [
 ];
 
 const products = [
-  { id: 1, rank: "01", top: true, name: "Premium Runner X", sub: "Lightweight running sneakers · White", price: "৳2,499", match: 98 },
-  { id: 2, rank: "02", top: false, name: "AeroStep Lite", sub: "Breathable mesh · White/Grey", price: "৳2,890", match: 91 },
-  { id: 3, rank: "03", top: false, name: "CloudWalk Pro", sub: "Cushioned sole · All-white", price: "৳2,299", match: 87 },
+  {
+    id: 1,
+    rank: "01",
+    top: true,
+    name: "NovaStride Elite",
+    sub: "Premium leather · Triple White",
+    price: "৳2,499",
+    match: 98,
+    imgUrl: "/images/pr1.png"
+  },
+  {
+    id: 2,
+    rank: "02",
+    top: false,
+    name: "Urban Pulse",
+    sub: "Mesh & suede · White/Brown",
+    price: "৳2,890",
+    match: 91,
+    imgUrl: "/images/pr2.png"
+  },
+  {
+    id: 3,
+    rank: "03",
+    top: false,
+    name: "Summit Court",
+    sub: "Retro court style · White/Stone",
+    price: "৳2,299",
+    match: 87,
+    imgUrl: "/images/pr3.png"
+  }
 ];
 
 const RING_R = 15;
@@ -186,7 +213,7 @@ export default function AiSearchPreview() {
         style={{ perspective: "1200px" }}
       >
         {/* rotating gradient glow border */}
-        <div className="absolute -inset-[3px] rounded-[34px] overflow-hidden pointer-events-none opacity-70">
+        <div className="absolute -inset-[3px] rounded-[28px] overflow-hidden pointer-events-none opacity-70">
           <div
             className="absolute inset-[-50%]"
             style={{
@@ -212,7 +239,7 @@ export default function AiSearchPreview() {
 
         {/* Card */}
         <div
-          className="relative bg-white rounded-[32px] shadow-xl shadow-slate-200/70 overflow-hidden"
+          className="relative bg-white rounded-[26px] shadow-xl shadow-slate-200/70 overflow-hidden"
           style={{
             transform: `rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg)`,
             transition: "transform 0.15s ease-out",
@@ -224,28 +251,15 @@ export default function AiSearchPreview() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#FEBC2E]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#28C840]" />
-            <span className="esf-mono ml-3 text-[11px] text-slate-400 truncate">emventory.ai/search</span>
+            <span className="esf-mono ml-3 text-[11px] text-slate-400 truncate">Trolly Ai</span>
           </div>
 
           <div className="p-4">
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 mb-4">
-              <span className="relative flex h-2.5 w-2.5">
-                <span
-                  className="absolute inline-flex h-full w-full rounded-full opacity-70"
-                  style={{ background: "#2F5DFA", animation: "ping 1.6s cubic-bezier(0,0,0.2,1) infinite" }}
-                />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ background: "#2F5DFA" }} />
-              </span>
-              <span className="esf-eyebrow text-[13px] font-semibold tracking-tight text-slate-700">
-                emventory AI Search
-              </span>
-            </div>
 
             {/* Search bar */}
             <div
               ref={searchBarRef}
-              className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-3"
+              className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-full px-3 py-2 mb-3"
               style={{ transition: "border-color 0.3s" }}
             >
               <Search size={18} className="text-slate-400 flex-shrink-0" />
@@ -258,10 +272,10 @@ export default function AiSearchPreview() {
                 />
               </div>
               <button
-                className="h-9 w-9 rounded-xl text-white flex items-center justify-center flex-shrink-0"
+                className="h-7 w-7 rounded-full text-white flex items-center justify-center flex-shrink-0"
                 style={{ background: "#2F5DFA" }}
               >
-                <Mic size={16} />
+                <Mic size={12} />
               </button>
             </div>
 
@@ -286,44 +300,29 @@ export default function AiSearchPreview() {
               ))}
             </div>
 
-            {/* Scan row */}
-            <div ref={scanRowRef} className="mb-3" style={{ opacity: 0, transition: "opacity 0.25s ease" }}>
-              <div className="flex items-center justify-between mb-1.5">
-                <span className="esf-mono text-[11px] text-slate-400">
-                  scanning <span ref={scanCountRef}>{CATALOG_SIZE.toLocaleString()}</span> listings
-                </span>
-                <Sparkles size={12} style={{ color: "#2F5DFA" }} />
-              </div>
-              <div className="h-[3px] rounded-full bg-slate-100 overflow-hidden">
-                <div ref={scanFillRef} className="h-full rounded-full" style={{ width: "0%", background: "#2F5DFA", transition: "width 0.05s linear" }} />
-              </div>
-            </div>
+           
 
             {/* Results label */}
             <div ref={resultsLabelRef} className="flex items-center gap-2 text-xs text-slate-400 mb-3" style={{ opacity: 0, transition: "opacity 0.3s" }}>
               <span style={{ color: "#2F5DFA" }}>✦</span>
               {products.length} matches, ranked by fit
             </div>
-
+<div className="mb-20">
             {/* Product cards */}
             {products.map((p, i) => (
               <div
                 key={p.id}
                 ref={(el) => (cardRefs.current[i] = el)}
-                className="flex items-center gap-3 border border-slate-100 rounded-2xl p-3 mb-2.5 cursor-pointer hover:bg-slate-50"
+                className="flex items-center gap-3 border border-slate-100 rounded-2xl p-2 mb-2.5 cursor-pointer hover:bg-slate-50"
                 style={{ opacity: 0, transform: "translateY(12px)", transition: "opacity 0.4s ease, transform 0.4s ease, background 0.2s" }}
               >
-                <div className="flex flex-col items-center w-6 flex-shrink-0">
-                  <span className="esf-mono text-[13px] font-medium" style={{ color: p.top ? "#2F5DFA" : "#C9CDD8" }}>
-                    {p.rank}
-                  </span>
-                </div>
-                <div
-                  className="h-14 w-14 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: p.top ? "#DCE7FF" : "#EAF0FF", color: "#2F5DFA" }}
-                >
-                  <ShoppingBag size={24} />
-                </div>
+               <div className="h-16 w-16 rounded-lg overflow-hidden flex-shrink-0 bg-slate-100 border border-slate-100">
+  <img 
+    src={p.imgUrl} 
+    alt={p.name} 
+    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+  />
+</div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5">
                     <h4 className="text-sm font-medium text-slate-900 leading-tight truncate">{p.name}</h4>
@@ -355,11 +354,8 @@ export default function AiSearchPreview() {
                 </div>
               </div>
             ))}
+</div>
 
-            <button className="w-full flex items-center justify-center gap-1.5 text-xs font-medium text-slate-500 hover:text-slate-700 py-1.5 transition-colors">
-              View all matches
-              <ArrowRight size={12} />
-            </button>
 
             <div className="grid grid-cols-3 pt-3 mt-1 border-t border-slate-100">
               {[["0.2s", "Search response"], ["92%", "Match accuracy"], ["24/7", "AI assistance"]].map(([v, l], i) => (
